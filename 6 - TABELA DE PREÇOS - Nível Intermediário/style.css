@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+root{
+    font-size: 62.5%;
+}
+
+.background-half{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #1D539E;
+    width: 100vw;
+    height: 50vh;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+    padding: 7rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+header  h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+header h3{
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+.grids{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 5rem;
+    min-width: 80rem;
+  
+}
+
+.grid{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #828799;
+    width: 25rem;
+    height: 30rem;
+    min-width: 15rem;
+    justify-content: space-between;
+    padding: 1rem;
+   
+}
+
+.selected h4{
+    border-radius: 8px 8px 0px 0px;
+    background: #FFCC29;
+    box-shadow: 0px 1px 2px 0px rgba(142, 150, 185, 0.25);
+    padding: 1.4rem;
+    margin: -1rem;
+    
+}
+
+.selectedMidleGrid{
+    transform: translateY(-1rem);
+}
+
+
+.grid button{
+    border-radius: 10px;
+    border: 1px solid #1D539E;
+    color: #1D539E;
+    background-color: #FFF;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.grid .selectedButton{
+    background-color: #1D539E ;
+    color: #fff ;
+  
+}
+
+.grid p strong{
+    color: #1E2338;
+    font-size: 1.5rem;
+}
+
+.grid ul li{
+    list-style: none;
+    margin: 1rem;
+}
+
+.grid svg{
+    margin-right: .8rem;
+}
+
+.grid h4{
+    font-size: 1.6rem;
+    color: #1E2338;
+}
+
+footer{
+    text-align: center;
+    margin: 3rem;
+}
+

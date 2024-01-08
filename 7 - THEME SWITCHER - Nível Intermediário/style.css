@@ -1,0 +1,42 @@
+.hide{
+    display: none;
+}
+
+.darkMode{
+    background-color: black;
+    color: aliceblue;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+}
+
+button{
+    
+  
+
+    padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .button {
+    border-color: white;
+    background-color: #333;
+    color: white;
+  }
+
+  .button:hover {
+    background-color: #f2f2f2; /* Cor de hover para o tema claro */
+  }

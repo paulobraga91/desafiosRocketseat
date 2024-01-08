@@ -1,0 +1,286 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #22212C;
+    
+}
+
+.border{
+    border-radius: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    padding: 2rem;
+}
+
+.content{
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "PROFILE PROJECTS PROJECTS"
+    "PROFILE PA PB"
+    "LINKS POSTS POSTS"
+    " LINKS PD PD"
+    "STAKCS PD PD"
+    "EXPS   . ."
+    "COURSES . .";
+}
+
+.profile{
+    grid-area: PROFILE;
+    display: grid;
+    gap: .5rem;
+    text-align: center;
+}
+
+
+.profile img{
+    width: 8rem ;
+    height: 8rem;
+    border-radius: 50%;
+    border: 2px solid #0F0;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.posts h3,
+.profile h3,
+.courses h3,
+.exps h3, 
+.stakcs h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.profile p{
+    font-size: 1rem ;
+    font-weight: 400;
+}
+
+.profile h3, p{
+    color: #837E9F;
+}
+
+.links{
+    grid-area: LINKS;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 1rem;
+}
+
+.links a{
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #837E9F;
+}
+
+.links i{
+  
+    margin-right: 1rem;
+}
+
+.links ul{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.stacksList{
+    grid-area: STAKCS;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 1rem;
+ }
+
+.stacksList span{
+    border-radius: 30px;
+    background: #CB92B1;
+    color: black;
+    font-weight: 700;
+    padding: .2rem;
+    text-align: center;
+}
+
+
+
+
+.exps{
+    grid-area: EXPS;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.5;
+    font-weight: 400;
+}
+
+.exps span{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.exps ul li{
+    font-size: 1.0rem;
+}
+
+
+
+.courses{
+    grid-area: COURSES;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.5;
+    font-weight: 400;
+}
+
+.courses span{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.courses ul li{
+    font-size: 1.0rem;
+}
+
+.projects{
+    grid-area: PROJECTS;
+}
+
+.projects div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects h3{
+    font-size: 1.3rem;
+}
+
+.projects p{
+    font-size: 1.0rem;
+}
+
+.posts{
+    grid-area: POSTS;
+    margin: auto 0;
+}
+
+.projectA{
+    grid-area: PA;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.0rem;
+}
+
+.projectA h3{
+    font-size: 1.2rem;
+}
+
+.rate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate div{
+    display: flex;
+    gap: 1rem;
+}
+
+.rate i{
+    margin-right: .5rem;
+}
+
+.projectB{
+    grid-area: PB;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.0rem;
+}
+
+
+.projectDetail{
+    grid-area: PD;
+    display: flex;
+    gap:1rem;
+   object-fit: contain;
+    max-height: 15rem;
+   
+}
+
+.projectDetail img{
+    width: 8rem ;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.tags{
+    display: flex;
+    gap: 1rem;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
+.title span{
+    font-weight: 400;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+
+.text p{
+    margin: .5rem 0;
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+
+
+@media(width < 800px){
+    .content{
+       
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+       "PROFILE"
+       "LINKS"
+       "STAKCS"
+       "EXPS"
+       "PROJECTS"
+       "PA"
+       "PB"
+       "COURSES"
+       "POSTS"
+       "PD";
+    }  
+}
+
+@media(width > 800px){
+    .content{
+        max-width: 120rem;
+        margin: 2 auto;
+    }
+}

@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    font-size: 62.5%;
+    background:lightgray url(imagem.jpg) 50%/ cover no-repeat;
+    
+}
+
+.content header img{
+    width: 22rem;
+}
+
+.content{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   background-color: black;
+   color: white;
+   padding: 2rem;
+   font-family: sans-serif;
+   
+}
+
+.content h3{
+    color: #08C05E;
+    font-size: 1.8rem;
+   
+}
+
+.content h4{
+    font-size: 1.3rem;
+}
+
+.content h5{
+    font-size: 1.0rem;
+}
+
+.content label{
+    color: #04D361;
+    font-size: 1.2rem ;
+  
+}
+
+.classRelative{
+    position: relative;
+}
+
+.readFirst{
+    color: azure;
+    margin-top: 5rem;
+    color:  #8257E5;
+    font-size: 1.0rem;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+.input{
+    display: flex;
+    position: absolute;
+    
+}
+
+.input button{
+    width: 3.8rem;
+    height: 3.8rem;
+    background-color: #8257E5;
+    border: none;
+}
+
+.input p{
+
+    background-color: #08C05E;
+    color: #08C05E;
+}
+
+.input input{
+    width: 60vw;
+    border: none;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.input input::placeholder{
+ padding: 1rem;
+ font-size: 1rem;
+ color: #6A6A6A;
+}
+
+.input p{
+    color: #8257E5;
+    font: 1.2rem;
+    position: relative;
+}
+
+.textBottomInput{
+    color: white;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
